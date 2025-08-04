@@ -26,6 +26,9 @@ An integrated community-driven app that enables:
 - Locate alternative resource locations (water trucks, generators, etc.)
 - GPS-enabled incident reporting
 
+### Live Link
+https://utility-resilience-app-neon.vercel.app/
+
 ### 📱 Quick Report Tool
 - Submit incidents with photos and GPS coordinates
 - Categorize issues by utility type and severity
@@ -181,9 +184,7 @@ We welcome contributions from the community! Please read our contributing guidel
 - Facebook group partnerships for feedback
 
 ### Contact
-- **Email**: [your-email@domain.com]
-- **Community WhatsApp**: [Link to group]
-- **Facebook**: [Community page link]
+- **Email**: [mellonpakkies@gmail.com]
 
 ## 📄 License
 
