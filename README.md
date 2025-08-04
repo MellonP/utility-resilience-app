@@ -27,7 +27,7 @@ An integrated community-driven app that enables:
 - GPS-enabled incident reporting
 
 ### Live Link
-https://utility-resilience-app-neon.vercel.app/
+https://utility-resilience-appmp.vercel.app/
 
 ### 📱 Quick Report Tool
 - Submit incidents with photos and GPS coordinates
