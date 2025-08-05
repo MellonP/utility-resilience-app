@@ -212,7 +212,7 @@ const Index = () => {
       </div>
 
       {/* Navigation */}
-      <Navigation />
+      <Navigation activeTab={activeTab} onTabChange={setActiveTab} />
     </div>
   );
 };

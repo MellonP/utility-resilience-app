@@ -2,14 +2,19 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { MapPin, AlertTriangle, MessageSquare, BarChart3, Settings, Home } from "lucide-react";
 
-const Navigation = () => {
+interface NavigationProps {
+  activeTab: string;
+  onTabChange: (tab: string) => void;
+}
+
+const Navigation = ({ activeTab, onTabChange }: NavigationProps) => {
   const navItems = [
-    { icon: Home, label: "Home", path: "/" },
-    { icon: MapPin, label: "Map", path: "/map" },
-    { icon: AlertTriangle, label: "Report", path: "/report" },
-    { icon: MessageSquare, label: "Community", path: "/community" },
-    { icon: BarChart3, label: "Dashboard", path: "/dashboard" },
-    { icon: Settings, label: "Settings", path: "/settings" },
+    { icon: Home, label: "Home", tab: "overview" },
+    { icon: MapPin, label: "Map", tab: "map" },
+    { icon: AlertTriangle, label: "Report", tab: "reports" },
+    { icon: MessageSquare, label: "Community", tab: "community" },
+    { icon: BarChart3, label: "Dashboard", tab: "dashboard" },
+    { icon: Settings, label: "Settings", tab: "settings" },
   ];
 
   return (
@@ -17,10 +22,11 @@ const Navigation = () => {
       <div className="flex justify-around items-center">
         {navItems.map((item) => (
           <Button
-            key={item.path}
-            variant="ghost"
+            key={item.tab}
+            variant={activeTab === item.tab ? "default" : "ghost"}
             size="sm"
             className="flex-col h-auto py-2 px-3"
+            onClick={() => onTabChange(item.tab)}
           >
             <item.icon className="h-5 w-5 mb-1" />
             <span className="text-xs">{item.label}</span>
